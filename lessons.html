@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <style>
+      body {
+        background-color: #b39ddb;
+      }
+    </style>
+    <body>
+
+      <nav>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center" style="font-size: 20px;">Расписание уроков</a>
+        </div>
+      </nav>
+
+      <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img style="margin-top: 10px;" src="images/logo.png">
+          </div>
+          <a href="#!name"><span class="white-text name" style="margin-top:70px"></span></a>
+          <a href="#!email"><span class="white-text email"></span></a>
+        </div></li>
+        <li><a href="index.html"><i class="material-icons">home</i>Главная страница</a></li>
+        <li><a href="lessons.html"><i class="material-icons">article</i>Расписание уроков</a></li>
+        <li><a href="school-info.html"><i class="material-icons">help outline</i>Информация о школе</a></li>
+        <li><a href="teachers.html"><i class="material-icons">face</i>Учителя</a></li>
+        <li><a href="bells.html"><i class="material-icons">schedule</i>Расписание звонков</a></li>
+        <li><a href="tasks.html"><i class="material-icons">work</i>Домашнее задание</a></li>
+        <li><a href="documents.html"><i class="material-icons">description</i>Документы</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Разное</a></li>
+        <li><a class="waves-effect" href="info.html">Информация о приложении</a></li>
+      </ul>
+
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header" style="background: #e6ceff;"><i class="material-icons"></i>Понедельник</div>
+          <div class="collapsible-body" style="background: #e6ceff;"><span>
+            Математика<br>
+            История<br>
+            Информатика<br>
+            Информатика<br>
+            Математика<br>
+            ОБЖ<br>
+            Астрономия
+          </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header" style="background: #e6ceff;"><i class="material-icons"></i>Вторник</div>
+          <div class="collapsible-body" style="background: #e6ceff;"><span>
+            Английский язык<br>
+            Английский язык<br>
+            Физика<br>
+            Физика<br>
+            География<br>
+            Информатика<br>
+            Информатика
+          </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header" style="background: #e6ceff;"><i class="material-icons"></i>Среда</div>
+          <div class="collapsible-body" style="background: #e6ceff;"><span>
+            Математика<br>
+            Математикаа<br>
+            Литература<br>
+            Физика<br>
+            Физкультура<br>
+            Английский язык
+          </span>
+        </div>
+        </li>
+        <li>
+          <div class="collapsible-header" style="background: #e6ceff;"><i class="material-icons"></i>Четверг</div>
+          <div class="collapsible-body" style="background: #e6ceff;"><span>
+            Биология<br>
+            Химия<br>
+            Физкультура<br>
+            История<br>
+            Русский язык<br>
+            Литература<br>
+            Физика
+          </span>
+        </div>
+        </li>
+        <li>
+          <div class="collapsible-header" style="background: #e6ceff;"><i class="material-icons"></i>Пятница</div>
+          <div class="collapsible-body" style="background: #e6ceff;"><span>
+            История<br>
+            Математика<br>
+            Физкультура<br>
+            Математика<br>
+            Физика<br>
+            Русский язык<br>
+            Литература
+          </span>
+        </div>
+        </li>
+      </ul>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <script>
+        var elem = document.querySelector('.sidenav');
+        var instance = new M.Sidenav(elem);
+        var elem = document.querySelector('.collapsible');
+        var instance = new M.Collapsible(elem);
+
+          $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.collapsible').collapsible();
+          });
+      </script>
+    </body>
+  </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="style.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <style>
+      body {
+        background-color: #b39ddb;
+      }
+    </style>
+    <body>
+
+      <nav>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">SCSP</a>
+        </div>
+      </nav>
+
+      <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+          <div class="background">
+            <img style="margin-top: 10px;" src="images/logo.png">
+          </div>
+          <a href="#!name"><span class="white-text name" style="margin-top:70px"></span></a>
+          <a href="#!email"><span class="white-text email"></span></a>
+        </div></li>
+        <li><a href="index.html"><i class="material-icons">home</i>Главная страница</a></li>
+        <li><a href="lessons.html"><i class="material-icons">article</i>Расписание уроков</a></li>
+        <li><a href="school-info.html"><i class="material-icons">help outline</i>Информация о школе</a></li>
+        <li><a href="teachers.html"><i class="material-icons">face</i>Учителя</a></li>
+        <li><a href="bells.html"><i class="material-icons">schedule</i>Расписание звонков</a></li>
+        <li><a href="tasks.html"><i class="material-icons">work</i>Домашнее задание</a></li>
+        <li><a href="documents.html"><i class="material-icons">description</i>Документы</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Разное</a></li>
+        <li><a class="waves-effect" href="info.html">Информация о приложении</a></li>
+      </ul>
+
+      <!--Code Here-->
+
+
+      <!--JavaScript at end of body for optimized loading-->
+
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <script>
+        var elem = document.querySelector('.sidenav');
+          var instance = new M.Sidenav(elem);
+
+          $(document).ready(function(){
+            $('.sidenav').sidenav();
+          });
+      </script>
+      <script src="app.js"></script>
+    </body>
+  </html>
