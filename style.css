@@ -34,3 +34,14 @@ iframe {
 .new-theme {
   background: #e6ceff;
 }
+
+.teachers-header {
+  text-align: center;
+  font-size: 20px;
+}
+
+.teachers-item {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
