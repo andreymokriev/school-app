@@ -56,15 +56,15 @@
       </div>
 
       <form action="subjectChoice">
-        <select name="subjectSelect" style="display: block;">
+        <select id="select" name="subjectSelect" style="display: block;">
           <option value="russian">Русский язык</option>
           <option value="math">Математика</option>
           <option value="literature">Литература</option>
         </select>
+        <textarea id="txtarea" cols="30" rows="10" style="background-color: white; height: 150px; font-size: 20px;"></textarea>
+        <div>
       </form>
-      <textarea name="" id="" cols="30" rows="10" style="background-color: white; height: 150px; font-size: 20px;"></textarea>
-      <div>
-      <div class="waves-effect waves-light btn" style="background-color: #7d67cc;">Сохранить</div><div class="waves-effect waves-light btn" style="margin-left: 20px; background-color: #7d67cc;">Загрузить</div>
+      <div class="waves-effect waves-light btn" style="background-color: #7d67cc;" onclick="taskSave()">Сохранить</div><div class="waves-effect waves-light btn" style="margin-left: 20px; background-color: #7d67cc;" onclick="taskLoad()">Загрузить</div>
       </div>
 
       <!--JavaScript at end of body for optimized loading-->
@@ -78,6 +78,6 @@
             $('.sidenav').sidenav();
           });
       </script>
-      <script src="app.js"></script>
+      <script src="tasks.js"></script>
     </body>
   </html>
