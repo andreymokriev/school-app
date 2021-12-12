@@ -45,26 +45,27 @@
       </ul>
 
       <!--Code Here-->
-      <div class="row">
-        <div class="col s12">
-          <div class="card-panel custom-purple">
-            <span class="white-text">
-              <h2>Раздел в разработке</h2>
-            </span>
-          </div>
-        </div>
-      </div>
 
       <form action="subjectChoice">
-        <select id="select" name="subjectSelect" style="display: block;">
+        <select id="select" name="subjectSelect" style="display: block; margin-top: 40px;">
           <option value="russian">Русский язык</option>
           <option value="math">Математика</option>
           <option value="literature">Литература</option>
+          <option value="english">Английский язык</option>
+          <option value="informatics">Информатика</option>
+          <option value="history">История</option>
+          <option value="physics">Физика</option>
+          <option value="biology">Биология</option>
+          <option value="chemistry">Химия</option>
+          <option value="astronomy">Астрономия</option>
+          <option value="geography">География</option>
+          <option value="obzh">ОБЖ</option>
+          <option value="pe">Физкультура</option>
         </select>
         <textarea id="txtarea" cols="30" rows="10" style="background-color: white; height: 150px; font-size: 20px;"></textarea>
         <div>
       </form>
-      <div class="waves-effect waves-light btn" style="background-color: #7d67cc;" onclick="taskSave()">Сохранить</div><div class="waves-effect waves-light btn" style="margin-left: 20px; background-color: #7d67cc;" onclick="taskLoad()">Загрузить</div>
+      <div class="waves-effect waves-light btn" style="background-color: #7d67cc;" onclick="taskSave(); M.toast({html: 'Сохранено'})">Сохранить</div><div class="waves-effect waves-light btn" style="margin-left: 20px; background-color: #7d67cc;" onclick="taskLoad(); M.toast({html: 'Загружено'})">Загрузить</div>
       </div>
 
       <!--JavaScript at end of body for optimized loading-->
