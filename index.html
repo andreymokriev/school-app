@@ -1,20 +1,12 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <!--Import Google Icon Foooont-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
       <link rel="stylesheet" href="style.css">
       <script src="app.js"></script>
-      <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-    <style>
-      body {
-        background-color: #b39ddb;
-      }
-    </style>
     <body>
       <nav>
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -43,6 +35,8 @@
         <li><a class="waves-effect" href="info.html">Информация о приложении</a></li>
       </ul>
 
+      <!-- Page content -->
+
       <div id="MyClockDisplay"></div>
       <div id="DayOfWeekDisplay"></div>
       <div id="lessonNumber"></div>
@@ -62,15 +56,11 @@
         getLessons();
       </script>
 
-      <!--JavaScript at end of body for optimized loading-->
+      <!--JavaScript-->
       <script type="text/javascript" src="js/materialize.js"></script>
       <script>
-        var elem = document.querySelector('.sidenav');
+          var elem = document.querySelector('.sidenav');
           var instance = new M.Sidenav(elem);
-
-          $(document).ready(function(){
-            $('.sidenav').sidenav();
-          });
       </script>
     </body>
   </html>

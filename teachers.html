@@ -2,20 +2,11 @@
   <html>
     <head>
       <!--Card color: #7d67cc-->
-      <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
       <link rel="stylesheet" href="style.css">
-
-      <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-    <style>
-      body {
-        background-color: #b39ddb;
-      }
-    </style>
     <body>
 
       <nav>
@@ -45,7 +36,7 @@
         <li><a class="waves-effect" href="info.html">Информация о приложении</a></li>
       </ul>
 
-      <!--Code Here-->
+      <!--Page Content-->
 
       <ul class="collection width-header">
         <li class="collection-header"><div class="teachers-header">Русский язык</div></li>
@@ -88,17 +79,11 @@
         <li class="collection-item"><div class="teachers-item">Трухин Сергей Сергеевич<div</li>
       </ul>
 
-      <!--JavaScript at end of body for optimized loading-->
-
+      <!--JavaScript-->
       <script type="text/javascript" src="js/materialize.js"></script>
       <script>
         var elem = document.querySelector('.sidenav');
-          var instance = new M.Sidenav(elem);
-
-          $(document).ready(function(){
-            $('.sidenav').sidenav();
-          });
+        var instance = new M.Sidenav(elem);
       </script>
-      <script src="app.js"></script>
     </body>
   </html>

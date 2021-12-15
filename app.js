@@ -22,7 +22,6 @@ function ShowDayOfWeek() {
   let dayofWeek =  daysOfWeek[date.getDay()]
 
   document.getElementById("DayOfWeekDisplay").textContent = dayofWeek;
-  console.log(dayofWeek)
 }
 //Получаем номер урока
 function getLessons() {

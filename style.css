@@ -1,3 +1,7 @@
+body {
+  background-color: #b39ddb;
+}
+
 #MyClockDisplay {
  text-align: center;
  font-weight: 400;
@@ -44,4 +48,24 @@ iframe {
   text-align: center;
   font-size: 15px;
   font-weight: bold;
+}
+
+.collapsible-header, .collapsible-body {
+  background: #e6ceff;
+}
+
+.subject-select {
+  display: block; margin-top: 40px;
+}
+
+textarea {
+  background-color: white; height: 150px; font-size: 20px;
+}
+
+.save-button {
+  background-color: #7d67cc;
+}
+
+.load-button {
+  margin-left: 20px; background-color: #7d67cc;
 }

@@ -1,20 +1,11 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
       <link rel="stylesheet" href="style.css">
-
-      <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-    <style>
-      body {
-        background-color: #b39ddb;
-      }
-    </style>
     <body>
 
       <nav>
@@ -44,10 +35,10 @@
         <li><a class="waves-effect" href="info.html">Информация о приложении</a></li>
       </ul>
 
-      <!--Code Here-->
+      <!--Page Content-->
 
       <form action="subjectChoice">
-        <select id="select" name="subjectSelect" style="display: block; margin-top: 40px;">
+        <select id="select" name="subjectSelect" class="subject-select">
           <option value="russian">Русский язык</option>
           <option value="math">Математика</option>
           <option value="literature">Литература</option>
@@ -62,22 +53,17 @@
           <option value="obzh">ОБЖ</option>
           <option value="pe">Физкультура</option>
         </select>
-        <textarea id="txtarea" cols="30" rows="10" style="background-color: white; height: 150px; font-size: 20px;"></textarea>
+        <textarea id="txtarea" cols="30" rows="10"></textarea>
         <div>
       </form>
-      <div class="waves-effect waves-light btn" style="background-color: #7d67cc;" onclick="taskSave(); M.toast({html: 'Сохранено'})">Сохранить</div><div class="waves-effect waves-light btn" style="margin-left: 20px; background-color: #7d67cc;" onclick="taskLoad(); M.toast({html: 'Загружено'})">Загрузить</div>
+      <div class="waves-effect waves-light btn save-button" onclick="taskSave(); M.toast({html: 'Сохранено'})">Сохранить</div><div class="waves-effect waves-light btn load-button" onclick="taskLoad(); M.toast({html: 'Загружено'})">Загрузить</div>
       </div>
 
-      <!--JavaScript at end of body for optimized loading-->
-
+      <!--JavaScript-->
       <script type="text/javascript" src="js/materialize.js"></script>
       <script>
         var elem = document.querySelector('.sidenav');
-          var instance = new M.Sidenav(elem);
-
-          $(document).ready(function(){
-            $('.sidenav').sidenav();
-          });
+        var instance = new M.Sidenav(elem);
       </script>
       <script src="app.js"></script>
     </body>
