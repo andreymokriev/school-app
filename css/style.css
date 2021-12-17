@@ -69,3 +69,8 @@ textarea {
 .load-button {
   margin-left: 20px; background-color: #7d67cc;
 }
+
+.collapsible-lessons {
+  font-size: 15px;
+  font-weight: 500;
+}
