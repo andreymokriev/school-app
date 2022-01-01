@@ -4735,7 +4735,7 @@ small {
   transition: -webkit-box-shadow .25s;
   transition: box-shadow .25s;
   transition: box-shadow .25s, -webkit-box-shadow .25s;
-  padding: 24px;
+  padding: 25px;
   margin: 0.5rem 0 1rem 0;
   border-radius: 2px;
   background-color: #fff;
@@ -4753,8 +4753,8 @@ small {
 }
 
 .card .card-title {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .card .card-title.activator {
@@ -4883,7 +4883,7 @@ small {
 }
 
 .card .card-content {
-  padding: 24px;
+  padding: 15px;
   border-radius: 0 0 2px 2px;
 }
 

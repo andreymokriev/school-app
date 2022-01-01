@@ -80,3 +80,13 @@ textarea {
   font-size: 15px;
   font-weight: 500;
 }
+
+.teachers-title {
+  text-align: center;
+}
+
+.teachers-card {
+  background-color: #e6ceff;
+  font-weight: 450;
+  font-size: 23px;
+}
