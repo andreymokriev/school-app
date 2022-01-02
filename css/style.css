@@ -2,7 +2,7 @@ body {
   background-color: #b39ddb;
 }
 
-#MyClockDisplay {
+#MyClockDisplay, h1 {
  text-align: center;
  font-weight: 400;
  line-height: 1.3;
